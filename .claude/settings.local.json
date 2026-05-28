@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ':*)",
+      "WebFetch(domain:www.youtube.com)",
+      "Read(//private/tmp/**)",
+      "Bash(unzip -o \"/Users/coledavenport/Downloads/Huddle notes_ 5_18_26 with @Lance Legel and @Cole DavenportSlack AI took notes for this huddle from 11_46_38 AM - 12_03_32 PM CDT.docx\" -d huddle_docx)",
+      "Bash(python3 -c ':*)",
+      "Bash(python dashboard_data.py)",
+      "Bash(python3 -c \"import torch; print\\(torch.__version__\\)\")",
+      "Bash(ls -la *.py)",
+      "Bash(pip show:*)",
+      "Bash(.venv/bin/python -c \"import torch, streamlit, plotly; print\\('torch', torch.__version__\\); print\\('streamlit', streamlit.__version__\\); print\\('plotly', plotly.__version__\\)\")",
+      "Bash(.venv/bin/python -c \"import torch; print\\('torch', torch.__version__\\)\")",
+      "Bash(.venv/bin/pip list:*)",
+      "Bash(.venv/bin/python dashboard_data.py)",
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(.venv/bin/streamlit run:*)",
+      "Bash(echo \"PID=$!\")",
+      "Read(//tmp/**)",
+      "Bash(curl -s -o /tmp/page.html -w \"HTTP %{http_code}\\\\n\" http://localhost:8765/)",
+      "Bash(curl -s \"http://localhost:8765/_stcore/health\" -w \"\\\\nhealth: HTTP %{http_code}\\\\n\")",
+      "Bash(curl -s \"http://localhost:8765/?embed=true\" -o /tmp/page2.html)",
+      "Bash(kill 49804)",
+      "Bash(.venv/bin/python -c ':*)",
+      "Bash(grep -vE \"ScriptRunContext|bare mode|WARNING streamlit|No runtime|Streamlit app|streamlit run|For better|run it with|^\\\\s*$|^$\")",
+      "Bash(cp player_stats/trained_model.pt /tmp/ps_model.pt.bak)",
+      "Bash(cp random_masking/trained_model.pt /tmp/rm_model.pt.bak)",
+      "Bash(cp /tmp/ps_model.pt.bak player_stats/trained_model.pt)",
+      "Bash(cp /tmp/rm_model.pt.bak random_masking/trained_model.pt)",
+      "Bash(grep -iE \"^\\(streamlit|torch|pandas|numpy|plotly|pillow|requests|scikit-learn\\)\\\\s\" echo \"\" echo \"--- existing requirements.txt ---\" cat requirements.txt echo \"\" echo \"--- repo size and what would be tracked ---\" du -sh --exclude=.venv --exclude=__pycache__ /Users/coledavenport/Documents/Projects/nba_predictor/)",
+      "Bash(.venv/bin/python -W default::FutureWarning -W default::UserWarning -c ':*)"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+# Runtime deps for the NBA Predictor dashboard + the existing app.py.
+# Pinned to versions that match the local .venv known to work.
+streamlit==1.57.0
+pandas==3.0.3
+numpy==2.4.4
+plotly==6.7.0
+torch==2.12.0
+Pillow==12.2.0
+requests==2.34.1

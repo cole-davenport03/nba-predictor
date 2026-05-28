@@ -1,0 +1,20 @@
+# Streamlit configuration committed to the repo so behaviour is consistent
+# locally and on Streamlit Community Cloud.
+
+[theme]
+# The dashboard injects its own dark CSS, so we just match the page chrome.
+base = "dark"
+primaryColor = "#3B9BFF"
+backgroundColor = "#070A0F"
+secondaryBackgroundColor = "#0E141C"
+textColor = "#E8EEF7"
+font = "sans serif"
+
+[server]
+# Don't show the "Made with Streamlit" deploy widget to public visitors.
+headless = true
+# Resource hygiene on free tier:
+maxUploadSize = 5
+
+[browser]
+gatherUsageStats = false
